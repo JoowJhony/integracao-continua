@@ -28,7 +28,7 @@ jobs:
       uses: golangci/golangci-lint-action@v7
       with:
         version: v2.0
-        args: controllers/ /database models/ routes/
+        args: controllers/ database/ models/ routes/
 
     - name: Test
       run: docker compose exec app go test main_test.go
